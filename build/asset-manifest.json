@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/static/css/main.ea0949c3.chunk.css",
+    "main.js": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/static/js/main.23ff0150.chunk.js",
+    "main.js.map": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/static/js/main.23ff0150.chunk.js.map",
+    "runtime-main.js": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/static/js/runtime-main.5cb5ec09.js",
+    "runtime-main.js.map": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/static/js/runtime-main.5cb5ec09.js.map",
+    "index.html": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/index.html",
+    "precache-manifest.7c72ddbaf230cf29452b65c175b940b5.js": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/precache-manifest.7c72ddbaf230cf29452b65c175b940b5.js",
+    "service-worker.js": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/service-worker.js",
+    "static/css/main.ea0949c3.chunk.css.map": "https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc/static/css/main.ea0949c3.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cb5ec09.js",
+    "static/css/main.ea0949c3.chunk.css",
+    "static/js/main.23ff0150.chunk.js"
+  ]
+}
