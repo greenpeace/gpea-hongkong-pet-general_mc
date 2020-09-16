@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+
+.footer-links {
+  @apply leading-loose flex flex-col justify-between items-end text-right list-none list-inside;
+}
+
+.header {
+  @apply bg-white w-full px-4 py-2;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  @apply object-contain;
+  height: 28px;
+  padding: 2px;
+  z-index: 1;
+}
+
+.nav-button {
+  @apply bg-gporange text-white font-bold py-2 px-4 rounded-2xl;
+}
+
+.main {
+  @apply text-black;
+}
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  @apply bg-cover bg-center transition transform w-full;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 100ms ease-out;
+}
+
+.petition-body {
+  margin-bottom: -4rem;
+  padding-bottom: 4rem;
+}
+
+/* Form */
+.form-container {
+  @apply mb-8 sticky z-10 top-0 self-center;
+  top: 20px;
+}
+
+.form-header {
+  @apply mt-4 mb-8 text-2xl text-center font-bold;
+}
+
+.form-body {
+  @apply border bg-white px-4 py-6 rounded-xl shadow-2xl overflow-hidden;
+}
+
+.form-label {
+  @apply px-2 py-1 w-full text-gray3 text-xs;
+}
+
+.form-row {
+  @apply relative w-full mb-4;
+}
+
+.form-row label.error {
+  @apply px-2 text-gpred text-xs;
+  position: absolute;
+  left: 0px;
+  bottom: -18px;
+}
+
+.form-input.error {
+  @apply border-gpred;
+}
+
+.form-input {
+  @apply shadow-none text-black bg-white border border-gray4 w-full text-base outline-none appearance-none rounded py-2 px-2;
+}
+
+.form-input:hover {
+}
+
+.form-input:focus {
+  @apply border-gpgreen shadow-none;
+}
+
+.form-button {
+  @apply my-2 py-2 px-4 font-bold leading-loose tracking-wide text-lg shadow w-full bg-gporange text-white text-center  rounded;
+}
+
+.form-button--share {
+  background-color: rgb(24, 119, 242);
+}
+
+.form-button--whatsapp {
+  background-color: #25d366;
+}
+
+.form-button--support {
+  @apply bg-gporange;
+}
+
+#opt-in {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.text {
+  @apply leading-normal text-base mb-4;
+}
+
+@tailwind utilities;
