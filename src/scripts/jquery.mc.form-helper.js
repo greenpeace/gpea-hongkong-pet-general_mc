@@ -211,6 +211,8 @@ $(() => {
 				display: block !important;
 			}`;
     document.head.appendChild(style);
+    //
+    $("#MobilePhone").removeAttr("required");
   } else {
     // not in the dd page
     let style = document.createElement("style");
