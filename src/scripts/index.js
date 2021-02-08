@@ -2,7 +2,6 @@
 import {
   fetchFormInputs,
   getPostURL,
-  // getNumSignupsAndTarget,
   showFullPageLoading,
   hideFullPageLoading,
   sendPetitionTracking,

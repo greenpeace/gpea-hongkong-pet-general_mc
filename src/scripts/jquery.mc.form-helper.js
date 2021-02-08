@@ -162,7 +162,7 @@ export const hideFullPageLoading = () => {
 
   setTimeout(() => {
     document.querySelector("#page-loading").remove();
-  }, 1100);
+  }, 1500);
 };
 
 /**

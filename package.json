@@ -31,7 +31,7 @@
     "prebuild": "yarn build:css",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:en": "yarn build:css && PUBLIC_URL=https://api.greenpeace.org.hk/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc react-scripts build",
+    "build:en": "yarn build:css && PUBLIC_URL=https://api.greenpeace.org.hk/2021/amazon react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "yarn build:en && node mc-deploy.js"

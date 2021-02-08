@@ -33,13 +33,11 @@ const FTPS = require("ftps");
 // definitions
 const buildFolder = path.join(__dirname, "build");
 const EndpointURL = "https://cloud.greenhk.greenpeace.org/petition-pp";
-let isLive = "true";
-let CampaignId = isLive ? "7012u000000OxDEAA0" : "7012u000000OxDYAA0";
+const CampaignId = "7012u000000OxDEAA0";
 const DonationPageUrl = "https://www.greenpeace.org/eastasia/"; // not used now
 const interests = ["Forest"]; // Arctic, Climate, Forest, Health, Oceans, Plastics
 const ftpConfigName = "ftp_hk"; // refer to ~/.npm-en-uploader-secret
-const ftpRemoteDir =
-  "/2020/petition/zh-hk.2020.forests.amazon_forest.general.signup.na.mc";
+const ftpRemoteDir = "/2021/amazon";
 
 let indexHtmlFilePath = path.join(buildFolder, "index.html");
 let fbuf = fs.readFileSync(indexHtmlFilePath);
@@ -158,12 +156,12 @@ let headersTmpl = `%%[
     SET @DonationPageUrl = "${DonationPageUrl}"
 
     /**** Retreive number of responses in campaign used for any petition where petition sign up progress bar is needed to display signups compared to targeted number of signups ****/
-    SET @CampaignRows = RetrieveSalesforceObjects("Campaign","NumberOfResponses, Petition_Signup_Target__c","Id","=",@CampaignId)
 
+SET @Rows = LookupRows("ENT.Campaign_Salesforce","Id", @CampaignId)
     IF RowCount(@CampaignRows) > 0 THEN
-      SET @CampaignSubscriberRow = Row(@CampaignRows, 1)
-      SET @NumberOfResponses = Field(@CampaignSubscriberRow, "NumberOfResponses")
-      SET @Petition_Signup_Target__c = Field(@CampaignSubscriberRow, "Petition_Signup_Target__c")
+      SET @CampaignRow = Row(@Rows, 1)
+      SET @NumberOfResponses = Field(@CampaignRow, "NumberOfResponses")
+      SET @Petition_Signup_Target__c = Field(@CampaignRow, "Petition_Signup_Target__c")
     ENDIF
 
     /*UTM Tracking Params*/
